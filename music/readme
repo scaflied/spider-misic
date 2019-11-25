@@ -1,0 +1,21 @@
+爬取网易云音乐的所有歌曲信息
+
+思路：先获取歌手的id，再通过id拼接地址获取歌手的所有歌的url，
+保存了所有的url
+使用模块：
+
+另需要安装html5lib模块
+pip3  install html5lib
+from bs4 import BeautifulSoup
+import csv
+import os
+import re
+import json
+import requests,time,random
+from lxml import etree
+
+保存字段：
+id
+
+name download_url 歌手
+
